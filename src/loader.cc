@@ -9,6 +9,7 @@ G4Loader::G4Loader(int argc, char** argv){
 #else
     runManager = new G4RunManager;
 #endif
+    std::cout<<"Number of cores = "<<G4Threading::G4GetNumberOfCores()<<std::endl;
     runManager->SetVerboseLevel(0);
 //Set mandatory initialization classes
     detGeom = new DetGeometry();

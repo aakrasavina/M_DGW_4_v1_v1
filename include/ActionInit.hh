@@ -4,6 +4,10 @@
 
 #include "G4VUserActionInitialization.hh"
 #include "PrimaryGen.hh"
+#include "EventAct.hh"
+#include "RunAct.hh"
+#include "StepAct.hh"
+#include "Run.hh"
 
 class ActionInit : public G4VUserActionInitialization{
 private:
